@@ -206,7 +206,7 @@ function clearTransactionLogs() {
 
 const screen = blessed.screen({
   smartCSR: true,
-  title: "AJIE S",
+  title: "Zero DEX",
   fullUnicode: true,
   mouse: true
 });
@@ -219,7 +219,7 @@ const headerBox = blessed.box({
   style: { fg: "white" }
 });
 figlet.text("AJIE S", { font: "Speed", horizontalLayout: "default" }, (err, data) => {
-  if (err) headerBox.setContent("{center}{bold}AJIE S{/bold}{/center}");
+  if (err) headerBox.setContent("{center}{bold}Zero DEX{/bold}{/center}");
   else headerBox.setContent(`{center}{bold}{green-fg}${data}{/green-fg}{/bold}{/center}`);
   screen.render();
 });
